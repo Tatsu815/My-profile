@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "formidable": "^3.5.4",
-    "multer": "^2.0.1"
+  "cors": "^2.8.5",
+  "express": "^4.18.2",
+  "formidable": "^3.5.4",
+  "multer": "^2.0.1"
   },
   "name": "about-tatee",
   "version": "1.0.0",
