@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Tatee Website - Some Pics</title>
+</head>
+<body class="somepics-page">
+  <header>
+    <a href="#" class="greets">Welcome to my website</a>
+    <button class="menu-toggle" aria-label="Open Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="projects.html">Projects</a>
+      <a href="somepics.html" class="active">Some Pics</a>
+    </nav>
+  </header>
+  <section class="somepics-section">
+    <h2>This is where my favorite memories are kept.</h2>
+    <form id="upload-form" class="custom-upload-form">
+    <label for="image-input" class="custom-file-label">
+        <i class="fa-solid fa-plus"></i>
+        <input type="file" id="image-input" accept="image/*" required hidden>
+    </label>
+    <span id="file-chosen" class="file-chosen-text">Xem trước ảnh</span>
+    <img id="img-preview" style="display:none; max-width:70px; max-height:70px; border-radius:8px; margin-left:10px;">
+    <input type="password" id="upload-password" class="custom-password" placeholder="Password" autocomplete="off" required>
+    <button type="submit" class="custom-upload-btn" title="Upload">
+        <i class="fa-solid fa-check"></i>
+    </button>
+    </form>
+    <span id="password-error" style="color:yellow; display:none; margin-left:10px;font-size:1.3rem">Sai password!</span>
+    <div id="gallery"></div>
+    <footer class="footer-contact">
+      <h3>Please contact me at: </h3>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/t%E1%BA%A5n-ho%C3%A0ng-a94692293/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Tatsu815" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/hv_.tan/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Tatsu.Tatee" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <h4>gmail: htan2582@gmail.com</h4>
+    </footer>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
