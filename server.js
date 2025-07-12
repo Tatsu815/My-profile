@@ -5,11 +5,12 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 const upload = multer({ dest: path.join(__dirname, 'uploads/') });
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use(express.static(path.join(__dirname, '.')));
 
 app.get('/api/images', (req, res) => {
   const dir = path.join(__dirname, 'uploads');
@@ -42,6 +43,10 @@ app.delete('/api/images/:filename', (req, res) => {
     }
     res.json({ success: true });
   });
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {

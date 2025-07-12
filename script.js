@@ -4,7 +4,7 @@ menuBtn.addEventListener('click', () => {
     nav.classList.toggle('open');
 });
 
-const API_BASE = 'http://localhost:3000';
+const API_BASE = '';
 const FIXED_PASSWORD = "0815";
 
 function ensureModal() {
