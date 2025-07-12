@@ -7,8 +7,9 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
 const upload = multer({ dest: path.join(__dirname, 'Uploads/') });
+
+app.use(cors());
 app.use('/uploads', express.static(path.join(__dirname, 'Uploads')));
 app.use(express.static(path.join(__dirname, '.')));
 
